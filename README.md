@@ -1,5 +1,6 @@
 # BurnAid🔥
-Deep Learning Model for Burn Injury Classification
+
+<p><em>Deep Learning Model for Burn Injury Classification</em>
 
 This project implements a deep learning model to classify burn injuries into first-, second-, and third-degree categories using image data. The model is built on EfficientNet-B0 with transfer learning and is trained on a real-world burn dataset.
 
