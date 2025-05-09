@@ -1,13 +1,15 @@
 # BurnAid🔥
-An AI model that classifies burn injuries (first, second, and third-degree burns) from images 
-The model has achieved 77% accuracy in burn classification.
+Deep Learning Model for Burn Injury Classification
 
-# Key Contributions:
+This project implements a deep learning model to classify burn injuries into first-, second-, and third-degree categories using image data. The model is built on EfficientNet-B0 with transfer learning and is trained on a real-world burn dataset.
 
-	•	Integrated EfficientNet as the backbone of the deep learning model, leveraging its pre-trained features for improved accuracy.
-	•	Enhanced the model architecture with dropout layers and ReLU activations to prevent overfitting and improve generalization.
-	•	Applied data augmentation techniques (e.g., rotations, scaling) to increase model robustness and performance with limited training data.
-	•	Optimized training using step-based learning rate scheduling to accelerate convergence and fine-tune performance.
+# Key Features:
+- EfficientNet Backbone: Utilizes pre-trained EfficientNet-B0 for strong feature extraction and improved accuracy.
+- Custom Classification Head: Added fully connected layers with dropout and ReLU activation to enhance learning and prevent overfitting.
+- Class Imbalance Handling: Incorporated weighted cross-entropy loss to compensate for dataset imbalance, especially for underrepresented burn classes.
+- Data Augmentation: Employed transformations like random rotation, flipping, and perspective distortion to increase model robustness.
+- Evaluation Metrics: Includes confusion matrix visualization, class-wise accuracy analysis, and prediction display on test samples.
+- Training Strategy: Optimized using Adam optimizer, weight decay regularization, and a step-based learning rate scheduler.
 
-
-BurnAid empowers healthcare professionals and individuals to quickly and accurately assess burn injury levels, enabling timely and appropriate treatment.
+# Performance:
+Achieved 77% validation accuracy on a multi-class classification task across three burn severity levels.
